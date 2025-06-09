@@ -19,7 +19,7 @@ i18n
     //   lookupLocalStorage: 'i18nextLng', // Key for local storage
     // },
     backend: {
-      loadPath: '/cheshire-react/locales/{{lng}}/translation.json',
+      loadPath: '/locales/{{lng}}/translation.json',
     },
   });
 
