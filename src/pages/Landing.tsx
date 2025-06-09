@@ -130,22 +130,22 @@ function LandingPage() {
 
 function preloadEnvFiles() {
   [
-    "/textures/mines.hdr?url",
-    "/textures/night.hdr?url"
+    "/textures/mines.hdr",
+    "/textures/night.hdr"
   ].forEach((url) => useEnvironment.preload({ files: url }));
 }
 preloadEnvFiles();
 
 function preloadGLTFFiles() {
   [
-    '/models/es/CAT_6080_S.glb?url',
-    '/models/room/Desktop2.glb?url',
-    '/models/room/Env2.glb?url',
-    '/models/room/door.glb?url',
-    '/models/tv_room/TVRoom.glb?url',
-    '/models/stations/pick_tote.glb?url',
-    '/models/stations/redcare_one_piece.glb?url',
-    '/models/stations/robot_base.glb?url',
+    '/models/es/CAT_6080_S.glb',
+    '/models/room/Desktop2.glb',
+    '/models/room/Env2.glb',
+    '/models/room/door.glb',
+    '/models/tv_room/TVRoom.glb',
+    '/models/stations/pick_tote.glb',
+    '/models/stations/redcare_one_piece.glb',
+    '/models/stations/robot_base.glb',
   ].forEach((url) => useGLTF.preload(url))
 }
 
