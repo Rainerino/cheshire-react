@@ -10,7 +10,7 @@ import { resolve } from "path";
 
 // https://vite.dev/config/
 export default defineConfig({
-  base: "/cheshire/",
+  base: "/cheshire-react/",
   plugins: [react()],
   assetsInclude: [
     '**/*.glb',

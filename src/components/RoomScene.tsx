@@ -43,7 +43,7 @@ export default function RoomScene(props) {
     useFrame((state, delta) => {
         if (!ref.current) return;
         ref.current.smoothTime = 0.5;
-        if (location === "/cheshire/home") {
+        if (location === "/cheshire-react/home") {
             ref.current.zoomTo(1, false);
             ref.current.disconnect();
             // Make sure the first frame is not transitioned.
@@ -64,7 +64,7 @@ export default function RoomScene(props) {
     })
     return (
         <group {...props}>
-            <Route path="/cheshire/home" nest>
+            <Route path="/cheshire-react/home" nest>
                 <Route path="/about">
                     <AboutScene controls={ref}/>
                 </Route>

@@ -47,7 +47,7 @@ export function RedrumDoor(props: JSX.IntrinsicElements['group']) {
             </mesh>
             <mesh position={[0.992, 0.95, 1.28]} rotation={[0, 0, 0]}>
                 <Box args={[0.02, 0.008, 0.01]}
-                    onClick={() => window.open(`${lang_toggle.is_en ? "/cheshire/images/instagram.png" : "/cheshire/images/wechat.png"}`, "_blank")}
+                    onClick={() => window.open(`${lang_toggle.is_en ? "/cheshire-react/images/instagram.png" : "/cheshire-react/images/wechat.png"}`, "_blank")}
                     onPointerOver={() => setHovered(true)}
                     onPointerOut={() => setHovered(false)}>
                     <meshStandardMaterial transparent opacity={INVIS} />

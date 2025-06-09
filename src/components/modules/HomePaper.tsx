@@ -120,7 +120,7 @@ export default function HomeNavPage({ ...props }) {
                                 color="black"
                                 onPointerOver={() => setHovered(true)}
                                 onPointerOut={() => setHovered(false)}
-                                onClick={() => setLocation("~/cheshire/projects")}>
+                                onClick={() => setLocation("~/cheshire-react/projects")}>
                                 {t("projects")}
                             </Text>
 
@@ -134,7 +134,7 @@ export default function HomeNavPage({ ...props }) {
                                 onPointerOver={() => setHovered(true)}
                                 onPointerOut={() => setHovered(false)}
                                 onClick={() => window.open(lang_toggle.is_en ?
-                                    '/cheshire/files/cv_2025__Robotic.pdf' : '/cheshire/files/cv_2025__Robotic_CN.pdf', '_blank')}>
+                                    '/cheshire-react/files/cv_2025__Robotic.pdf' : '/cheshire-react/files/cv_2025__Robotic_CN.pdf', '_blank')}>
                                 {t("resume")}
                             </Text>
 
@@ -146,7 +146,7 @@ export default function HomeNavPage({ ...props }) {
                                 color="black"
                                 onPointerOver={() => setHovered(true)}
                                 onPointerOut={() => setHovered(false)}
-                                onClick={() => setLocation("~/cheshire/projects")}>
+                                onClick={() => setLocation("~/cheshire-react/projects")}>
                                 {t("playground")}
                             </Text>
 
@@ -158,7 +158,7 @@ export default function HomeNavPage({ ...props }) {
                                 color="black"
                                 onPointerOver={() => setHovered(true)}
                                 onPointerOut={() => setHovered(false)}
-                                onClick={() => setLocation("~/cheshire/credit")}>
+                                onClick={() => setLocation("~/cheshire-react/credit")}>
                                 {t("credit")}
                             </Text>
 

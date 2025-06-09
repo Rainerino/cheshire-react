@@ -54,7 +54,7 @@ function LandingPage() {
 
   return (
     <>
-      <Redirect to="/cheshire/home" />
+      <Redirect to="/cheshire-react/home" />
       <div style={{ width: '100%', height: '100%' }}>
         <Canvas
           dpr={dpr}
@@ -71,29 +71,23 @@ function LandingPage() {
             {debug && <Perf position="bottom-left" />}
 
             <Suspense fallback={null}>
-              <Router base="/cheshire/projects">
+              <Router base="/cheshire-react/projects">
                 <Route path="/" component={() => <ProjectNavPage />} />
                 <Route path="/covariant" component={() => <CovariantPage />} />
                 <Route path="/motion_metrics" component={() => <MotionMetricsPage />} />
                 <Route path="/next" component={() => <NextPage />} />
               </Router>
-              <Route path="/cheshire/credit" >
+              <Route path="/cheshire-react/credit" >
                 <PerspectiveCamera makeDefault fov={75} />
                 <ambientLight intensity={1} />
                 <CameraControls enabled dollySpeed={1} />
-                {/* <Environment preset='city' /> */}
-                {/* <PivotControls lineWidth={3} depthTest={false} scale={2}>
-                    <Curtain position={new THREE.Vector3(-2.45, 1.7, -0.6)}
-                      rotation={new THREE.Euler(0, -Math.PI / 2, 0)} />
-                  </PivotControls> */}
-                {/* <Grid infiniteGrid={true} /> */}
               </Route>
               <RoomScene />
-              {/* <Preload all /> */}
+              <Preload all />
             </Suspense>
           </PerformanceMonitor>
         </Canvas>
-        <Loader />
+        {/* <Loader /> */}
         <div
           style={{
             position: 'absolute',
@@ -102,8 +96,8 @@ function LandingPage() {
             right: '5%',
             // transform: 'translateX(-50%)',
             transition: 'opacity 1s',
-            opacity: location !== '/cheshire/home' ? 1 : 0,
-            pointerEvents: location !== '/cheshire/home' ? 'auto' : 'none'
+            opacity: location !== '/cheshire-react/home' ? 1 : 0,
+            pointerEvents: location !== '/cheshire-react/home' ? 'auto' : 'none'
           }}
         >
           <ThemeProvider theme={darkTheme}>
@@ -111,13 +105,13 @@ function LandingPage() {
               <IconButton
                 onClick={() => {
                   if (location.includes('projects')) {
-                    if (location === '/cheshire/projects') {
+                    if (location === '/cheshire-react/projects') {
                       window.location.reload();
                     } else {
-                      setLocation('/cheshire/projects');
+                      setLocation('/cheshire-react/projects');
                     }
                   } else {
-                    setLocation('/cheshire/home');
+                    setLocation('/cheshire-react/home');
                   }
                 }}
                 style={{
@@ -135,22 +129,22 @@ function LandingPage() {
 
 function preloadEnvFiles() {
   [
-    "/cheshire/textures/mines.hdr?url",
-    "/cheshire/textures/night.hdr?url"
+    "/cheshire-react/textures/mines.hdr?url",
+    "/cheshire-react/textures/night.hdr?url"
   ].forEach((url) => useEnvironment.preload({ files: url }));
 }
 preloadEnvFiles();
 
 function preloadGLTFFiles() {
   [
-    '/cheshire/models/es/CAT_6080_S.glb?url',
-    '/cheshire/models/room/Desktop2.glb?url',
-    '/cheshire/models/room/Env2.glb?url',
-    '/cheshire/models/room/door.glb?url',
-    '/cheshire/models/tv_room/TVRoom.glb?url',
-    '/cheshire/models/stations/pick_tote.glb?url',
-    '/cheshire/models/stations/redcare_one_piece.glb?url',
-    '/cheshire/models/stations/robot_base.glb?url',
+    '/cheshire-react/models/es/CAT_6080_S.glb?url',
+    '/cheshire-react/models/room/Desktop2.glb?url',
+    '/cheshire-react/models/room/Env2.glb?url',
+    '/cheshire-react/models/room/door.glb?url',
+    '/cheshire-react/models/tv_room/TVRoom.glb?url',
+    '/cheshire-react/models/stations/pick_tote.glb?url',
+    '/cheshire-react/models/stations/redcare_one_piece.glb?url',
+    '/cheshire-react/models/stations/robot_base.glb?url',
   ].forEach((url) => useGLTF.preload(url))
 }
 

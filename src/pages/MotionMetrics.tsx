@@ -5,7 +5,7 @@ import {
     Grid, PerspectiveCamera, Scroll, ScrollControls, useScroll
 } from '@react-three/drei';
 import {CAT6080} from '../components/models/CAT_6080';
-// import env_file from "/cheshire/textures/mines.hdr?url"
+import env_file from "/cheshire-react/textures/mines.hdr?url"
 
 
 const CAMERA_POSITION = [
@@ -112,12 +112,12 @@ export default function MotionMetricsPage(props) {
                     <h1 style={{position: 'absolute', top: '300vh', left: '0.5vw', fontSize: '40vw'}}>Mext</h1>
                 </Scroll>
             </ScrollControls>
-            {/* <Environment
+            <Environment
                 files={env_file}
                 background
                 backgroundBlurriness={0.1}
                 backgroundIntensity={0.5}
-            /> */}
+            />
 
             <Grid infiniteGrid/>
         </group>
