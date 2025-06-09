@@ -107,12 +107,12 @@ function LandingPage() {
                   if (location.includes('projects')) {
                     if (location === '/cheshire-react/projects') {
                       window.location.reload();
-                      setLocation('/cheshire-react');
+                      setLocation('~/cheshire-react');
                     } else {
-                      setLocation('/cheshire-react/projects');
+                      setLocation('~/cheshire-react/projects');
                     }
                   } else {
-                    setLocation('/cheshire-react/home');
+                    setLocation('~/cheshire-react/home');
                   }
                 }}
                 style={{
