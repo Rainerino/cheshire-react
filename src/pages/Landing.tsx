@@ -106,8 +106,8 @@ function LandingPage() {
                 onClick={() => {
                   console.log(location)
                   if (location.includes('projects')) {
-                    if (location === '/cheshire-react/projects') {
-                      window.location.reload();
+                    if (location == '/cheshire-react/projects') {
+                    // window.location.reload();
                       setLocation('~/cheshire-react/home');
                     } else {
                       setLocation('~/cheshire-react/projects');
