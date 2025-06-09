@@ -1,0 +1,20 @@
+{
+    "welcome": "欢迎来到我的页面",
+    "about": "个人介绍",
+    "projects": "项目经历",
+    "resume": "简历",
+    "playground": "游乐场",
+    "credit": "致谢",
+    "lang": "Lang: En",
+    "name": "严一熠",
+    "title": "机器人工程师",
+    "switch": "切换视图",
+    "home_tooltip": "返回主页",
+    "back_tooltip": "返回上一页",
+    "about_intro": "我是做仿真到现实（sim-to-real）的\n机器人工程师，专注把实验室的技术\n落地成实用方案。我的专长是让仿真结果\n和真实表现一致，确保机器人系统\n既靠谱又好用。通过技术创新，我想让机器人\n和人类合作得更顺畅、更智能。",
+    "social": "社交",
+    "linkedln": "领英",
+    "sm": "微信",
+    "github": "Github",
+    "contact": "联系方式"
+}

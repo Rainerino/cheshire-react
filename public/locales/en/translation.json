@@ -1,0 +1,20 @@
+{
+    "welcome": "Welcome to my page",
+    "about": "About",
+    "projects": "Projects",
+    "resume": "Resume",
+    "playground": "Playground",
+    "credit": "Credit",
+    "lang": "语言:中",
+    "name": "Yiyi Yan",
+    "title": "Robotic Engineer",
+    "switch": "Change View",
+    "home_tooltip": "Go to the homepage",
+    "back_tooltip": "Go back",
+    "about_intro": "Fascinated by the elegance of robotics, \nI aspire to complement human efforts \nin exploration with it. As a robotic engineer,\n I focused on sim-to-real applications\nand transfer research into real-world solutions.",
+    "social": "Social",
+    "linkedln": "Linkedln",
+    "sm": "Instagram",
+    "github": "Github",
+    "contact": "Contact"
+}
