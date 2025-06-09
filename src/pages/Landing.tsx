@@ -104,6 +104,7 @@ function LandingPage() {
             <Tooltip title={t("back_tooltip")}>
               <IconButton
                 onClick={() => {
+                  console.log(location)
                   if (location.includes('projects')) {
                     if (location === '/cheshire-react/projects') {
                       window.location.reload();
