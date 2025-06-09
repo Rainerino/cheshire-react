@@ -5,7 +5,7 @@ import {
     Grid, PerspectiveCamera, Scroll, ScrollControls, useScroll
 } from '@react-three/drei';
 import {CAT6080} from '../components/models/CAT_6080';
-import env_file from "/cheshire-react/textures/mines.hdr?url"
+import env_file from "/textures/mines.hdr?url"
 
 
 const CAMERA_POSITION = [
