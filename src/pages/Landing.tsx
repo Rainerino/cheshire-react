@@ -87,7 +87,7 @@ function LandingPage() {
             </Suspense>
           </PerformanceMonitor>
         </Canvas>
-        {/* <Loader /> */}
+        <Loader />
         <div
           style={{
             position: 'absolute',
