@@ -87,7 +87,7 @@ function LandingPage() {
             </Suspense>
           </PerformanceMonitor>
         </Canvas>
-        <Loader />
+        {/* <Loader /> */}
         <div
           style={{
             position: 'absolute',
@@ -96,8 +96,8 @@ function LandingPage() {
             right: '5%',
             // transform: 'translateX(-50%)',
             transition: 'opacity 1s',
-            opacity: location !== '/cheshire-react/home' ? 1 : 0,
-            pointerEvents: location !== '/cheshire-react/home' ? 'auto' : 'none'
+            opacity: location !== '/cheshire-react/cheshire-react/home' ? 1 : 0,
+            pointerEvents: location !== '/cheshire-react/cheshire-react/home' ? 'auto' : 'none'
           }}
         >
           <ThemeProvider theme={darkTheme}>
@@ -105,14 +105,14 @@ function LandingPage() {
               <IconButton
                 onClick={() => {
                   if (location.includes('projects')) {
-                    if (location === '/cheshire-react/projects') {
+                    if (location === '/cheshire-react/cheshire-react/projects') {
                       window.location.reload();
-                      setLocation('/cheshire-react');
+                      setLocation('/cheshire-react/cheshire-react');
                     } else {
-                      setLocation('/cheshire-react/projects');
+                      setLocation('/cheshire-react/cheshire-react/projects');
                     }
                   } else {
-                    setLocation('/cheshire-react/home');
+                    setLocation('/cheshire-react/cheshire-react/home');
                   }
                 }}
                 style={{
@@ -130,22 +130,22 @@ function LandingPage() {
 
 function preloadEnvFiles() {
   [
-    "/textures/mines.hdr",
-    "/textures/night.hdr"
+    '/cheshire-react/textures/mines.hdr',
+    '/cheshire-react/textures/night.hdr'
   ].forEach((url) => useEnvironment.preload({ files: url }));
 }
 preloadEnvFiles();
 
 function preloadGLTFFiles() {
   [
-    '/models/es/CAT_6080_S.glb',
-    '/models/room/Desktop2.glb',
-    '/models/room/Env2.glb',
-    '/models/room/door.glb',
-    '/models/tv_room/TVRoom.glb',
-    '/models/stations/pick_tote.glb',
-    '/models/stations/redcare_one_piece.glb',
-    '/models/stations/robot_base.glb',
+    '/cheshire-react/models/es/CAT_6080_S.glb',
+    '/cheshire-react/models/room/Desktop2.glb',
+    '/cheshire-react/models/room/Env2.glb',
+    '/cheshire-react/models/room/door.glb',
+    '/cheshire-react/models/tv_room/TVRoom.glb',
+    '/cheshire-react/models/stations/pick_tote.glb',
+    '/cheshire-react/models/stations/redcare_one_piece.glb',
+    '/cheshire-react/models/stations/robot_base.glb',
   ].forEach((url) => useGLTF.preload(url))
 }
 
