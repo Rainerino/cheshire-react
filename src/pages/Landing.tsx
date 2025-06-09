@@ -129,22 +129,22 @@ function LandingPage() {
 
 function preloadEnvFiles() {
   [
-    "/cheshire-react/textures/mines.hdr?url",
-    "/cheshire-react/textures/night.hdr?url"
+    "/textures/mines.hdr?url",
+    "/textures/night.hdr?url"
   ].forEach((url) => useEnvironment.preload({ files: url }));
 }
 preloadEnvFiles();
 
 function preloadGLTFFiles() {
   [
-    '/cheshire-react/models/es/CAT_6080_S.glb?url',
-    '/cheshire-react/models/room/Desktop2.glb?url',
-    '/cheshire-react/models/room/Env2.glb?url',
-    '/cheshire-react/models/room/door.glb?url',
-    '/cheshire-react/models/tv_room/TVRoom.glb?url',
-    '/cheshire-react/models/stations/pick_tote.glb?url',
-    '/cheshire-react/models/stations/redcare_one_piece.glb?url',
-    '/cheshire-react/models/stations/robot_base.glb?url',
+    '/models/es/CAT_6080_S.glb?url',
+    '/models/room/Desktop2.glb?url',
+    '/models/room/Env2.glb?url',
+    '/models/room/door.glb?url',
+    '/models/tv_room/TVRoom.glb?url',
+    '/models/stations/pick_tote.glb?url',
+    '/models/stations/redcare_one_piece.glb?url',
+    '/models/stations/robot_base.glb?url',
   ].forEach((url) => useGLTF.preload(url))
 }
 
