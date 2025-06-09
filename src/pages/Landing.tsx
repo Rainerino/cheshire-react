@@ -96,8 +96,8 @@ function LandingPage() {
             right: '5%',
             // transform: 'translateX(-50%)',
             transition: 'opacity 1s',
-            opacity: location !== '/cheshire-react/cheshire-react/home' ? 1 : 0,
-            pointerEvents: location !== '/cheshire-react/cheshire-react/home' ? 'auto' : 'none'
+            opacity: location !== '/cheshire-react/home' ? 1 : 0,
+            pointerEvents: location !== '/cheshire-react/home' ? 'auto' : 'none'
           }}
         >
           <ThemeProvider theme={darkTheme}>
@@ -105,14 +105,14 @@ function LandingPage() {
               <IconButton
                 onClick={() => {
                   if (location.includes('projects')) {
-                    if (location === '/cheshire-react/cheshire-react/projects') {
+                    if (location === '/cheshire-react/projects') {
                       window.location.reload();
-                      setLocation('/cheshire-react/cheshire-react');
+                      setLocation('/cheshire-react');
                     } else {
-                      setLocation('/cheshire-react/cheshire-react/projects');
+                      setLocation('/cheshire-react/projects');
                     }
                   } else {
-                    setLocation('/cheshire-react/cheshire-react/home');
+                    setLocation('/cheshire-react/home');
                   }
                 }}
                 style={{
