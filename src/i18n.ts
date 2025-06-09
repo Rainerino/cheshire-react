@@ -13,13 +13,13 @@ i18n
     // debug: true,
     lng: 'en',
     supportedLngs: ['en', 'ch'], // Array of supported languages
-    // fallbackLng: 'en', // Fallback language
-    // detection: {
-    //   order: ['localStorage', 'navigator'], //  Order of language detection
-    //   lookupLocalStorage: 'i18nextLng', // Key for local storage
-    // },
+    fallbackLng: 'en', // Fallback language
+    detection: {
+      order: ['localStorage', 'navigator'], //  Order of language detection
+      lookupLocalStorage: 'i18nextLng', // Key for local storage
+    },
     backend: {
-      loadPath: '/locales/{{lng}}/translation.json?url',
+      loadPath: '/cheshire-react/locales/{{lng}}/translation.json',
     },
   });
 
