@@ -82,7 +82,10 @@ function LandingPage() {
                 <ambientLight intensity={1} />
                 <CameraControls enabled dollySpeed={1} />
               </Route>
-              <RoomScene />
+              <Route path="/cheshire-react/home" nest>
+                <RoomScene />
+              </Route>
+
               <Preload all />
             </Suspense>
           </PerformanceMonitor>
@@ -107,7 +110,7 @@ function LandingPage() {
                   console.log(location)
                   if (location.includes('projects')) {
                     if (location == '/cheshire-react/projects') {
-                    // window.location.reload();
+                      window.location.reload();
                       setLocation('~/cheshire-react/home');
                     } else {
                       setLocation('~/cheshire-react/projects');
