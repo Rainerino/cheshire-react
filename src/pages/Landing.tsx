@@ -54,7 +54,7 @@ function LandingPage() {
 
   return (
     <>
-      <Redirect to="/cheshire-react/home" />
+      <Redirect to="/cheshire-react/projects/covariant" />
       <div style={{ width: '100%', height: '100%' }}>
         <Canvas
           dpr={dpr}
