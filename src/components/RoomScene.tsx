@@ -14,6 +14,7 @@ import AboutScene from "./AboutScene";
 import ViewScene from "./ViewScene";
 import BusinessCard from "./modules/BusinessCard";
 import env_file from "/textures/night.hdr?url"
+import { Room3 } from "./models/Room3";
 
 const PAGE_ANGLE = Math.PI / 6.5;
 const LOOKAT_EPS = 0.00001;
@@ -98,7 +99,7 @@ export default function RoomScene(props) {
                 position={new THREE.Vector3(-2.45, 1.7, -0.6)}
                 rotation={new THREE.Euler(0, -Math.PI / 2, 0)}
             /> */}
-            {/* <Room2 position={[-1.5, 0, 0]} rotation={[0, Math.PI, 0]} /> */}
+            {/* <Room3 position={[-1.5, 0, 0]} rotation={[0, Math.PI, 0]} /> */}
             <RedrumDoor />
             {/* <Desktop2 position={[-0, 0, 0]} rotation={[0, Math.PI / 2, 0]} /> */}
             <Mirror
