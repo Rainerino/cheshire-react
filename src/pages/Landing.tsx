@@ -54,7 +54,7 @@ function LandingPage() {
 
   return (
     <>
-      <Redirect to="/cheshire-react/projects/covariant" />
+      <Redirect to="/cheshire-react/home" />
       <div style={{ width: '100%', height: '100%' }}>
         <Canvas
           dpr={dpr}
@@ -109,8 +109,10 @@ function LandingPage() {
                 onClick={() => {
                   console.log(location)
                   if (location.includes('projects')) {
+                    console.log('location', location)
                     if (location == '/cheshire-react/projects') {
                       window.location.reload();
+                      console.log('resetting location')
                       setLocation('~/cheshire-react/home');
                     } else {
                       setLocation('~/cheshire-react/projects');
